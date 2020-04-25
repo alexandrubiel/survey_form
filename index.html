@@ -4,12 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body">
 
-    <div>
-        <h1 id="title">The Best Gym in The World</h1>
-    </div>
     
+
+    <div class="container">
+        <h1 id="title">Gym Survery Form</h1>
+        <p id="description">We're super excited that you're joining our Best Gym fitness club.  
+            Please take a couple of minutes to answer a few questions.</p>
+       
+
+
+        <form id="survey-form" action="">
+            <label id="name-label" for="name">First Name : </label>
+            <input id="name" type="text" name="name" required placeholder="First Name"> <br />
+            <label id="email-label" for="name">Last Name : </label>
+            <input id="name" type="text" name="name" required placeholder="Last Name"><br>
+            <label id="email-label" for="email">Your Email : </label>
+            <input type="email" id="email" name="email" required placeholder="Your Email"><br>
+            <label id="number-label" for="number-label">Your Number : </label>
+            <input type="number" id="number" name="number" min="1" max="10" required placeholder="Enter a Number"><br>
+
+            <label for="city">What city are you in : </label>
+            <select class="survey-form" id="dropdown" name="City">
+                <label id="email-label" for="email">What city are you in : </label>
+                <option value="0">Select City:</option>
+                <option value="Berlin">Berlin</option>
+                <option value="Paris">Paris</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="London">London</option>
+                <option value="Madrid">Madrid</option>
+              </select> <br>
+
+              <div class="buttons-area">
+
+                <div class="box">
+                <p>How often are you using the gym? </p>
+
+                <label for="age1"><input class="radio" type="radio" id="age1" name="age" value="30" />Always</label>
+                <label for="age2"><input class="radio" type="radio" id="age2" name="age" value="60" />Usualy</label> 
+                <label for="age2"><input class="radio" type="radio" id="age3" name="age" value="100" /> Sometimes</label>
+
+              </div>
+                <br><br>
+
+           
+              <div class="box2">
+              <p> What is your height :</p>
+
+              <label for="height"><input type="checkbox" id="height" name="1.5cm" value="height" />1.5cm - 1.7cm</label>
+              <label for="height"> <input type="checkbox" id="height" name="1.7cm" value="height" />1.7cm - 1.85cm</label>
+              <label for="height"><input type="checkbox" id="height" name="1.85cm" value="height" />1.85cm - 2m</label>
+              </div>
+            </div><br /><br />
+
+              
+              <textarea id="textarea" placeholder="Additional Comments"></textarea> 
+              
+              <br><br>
+
+            
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
